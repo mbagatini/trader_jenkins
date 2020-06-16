@@ -1,40 +1,12 @@
--- Tabela usuário 
-CREATE TABLE usuario (
- id SERIAL NOT NULL,
- nome VARCHAR(50) NOT NULL,
- email VARCHAR(50) NOT NULL,
- senha VARCHAR(50) NOT NULL,
- cpf VARCHAR(14) NOT NULL,
-PRIMARY KEY(id));
- 
- -- Tabela ação
-CREATE TABLE acao (
- id SERIAL NOT NULL,
- nome VARCHAR(50) NOT NULL,
- preco DECIMAL(15,2) NOT NULL, 
-PRIMARY KEY(id));
+-- Inserir dados na tabela 'Ação'. 
 
- -- Tabela transacao
-CREATE TABLE transacao (
- usuario INT NOT NULL,
- acao INT NOT NULL,
- data TIMESTAMP,
- valor DECIMAL(15,2),
- quantidade INTEGER,
- total DECIMAL(15,2),
- tipo char(1),	
- 
-FOREIGN KEY(usuario) REFERENCES usuario(id),
-FOREIGN KEY(acao) REFERENCES acao(id));
+insert into acao (id, nome, preco) values (1, 'MRCC', '170.20');
+insert into acao (id, nome, preco) values (2, 'KMT', '385.76');
+insert into acao (id, nome, preco) values (3, 'CART', '278.05');
+insert into acao (id, nome, preco) values (4, 'OLD', '387.30');
 
- -- Tabela carteira
-CREATE TABLE carteira (
- usuario INT NOT NULL,
- acao INT NOT NULL,
- valor DECIMAL(15,2),
- quantidade INTEGER,
+-- Inserir dados na tabela 'Usuário'.
+insert into usuario (nome,email, senha, cpf) VALUES ('Renan', 'renankist@gmail.com', 'teste', '03248678089');
+insert into usuario (nome,email, senha, cpf) VALUES ('Morgana', 'morgana@gmail.com', 'teste', '03248678049');
 
-PRIMARY KEY(usuario, acao),
-FOREIGN KEY(usuario) REFERENCES usuario(id),
-FOREIGN KEY(acao) REFERENCES acao(id));
- 
+
