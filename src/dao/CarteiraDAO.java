@@ -49,8 +49,7 @@ public class CarteiraDAO implements IDAO<Carteira> {
         try {
             // Atualiza
             String sql = "UPDATE carteira SET "
-                    + "quantidade = quantidade + " + objeto.getQuantidade() + ", "
-                    + "updated_at = current_timestamp "
+                    + "quantidade = quantidade + " + objeto.getQuantidade()
                     + "WHERE usuario = ?"
                     + "  AND acao = ?";
             
@@ -94,8 +93,7 @@ public class CarteiraDAO implements IDAO<Carteira> {
         try {
             // Atualiza a carteira
             String sql = "UPDATE carteira SET "
-                    + "quantidade = quantidade - " + objeto.getQuantidade() + ", "
-                    + "updated_at = current_timestamp "
+                    + "quantidade = quantidade - " + objeto.getQuantidade()
                     + "WHERE usuario = ?"
                     + "  AND acao = ?";
             

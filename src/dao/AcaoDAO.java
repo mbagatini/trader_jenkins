@@ -56,8 +56,7 @@ public class AcaoDAO implements IDAO<Acao> {
         try {
             String sql = "UPDATE acao SET "
                     + "nome = '" + o.getNome() + "', "
-                    + "preco = '" + o.getPreco() + "',"
-                    + "updated_at = current_timestamp "
+                    + "preco = '" + o.getPreco() + "'"
                     + "WHERE id = " + o.getId();
 
             int resultado = ConexaoBD.getInstance().getConnection().createStatement().executeUpdate(sql);
@@ -170,15 +169,13 @@ public class AcaoDAO implements IDAO<Acao> {
         try {
             String sql = "UPDATE acao SET "
                     + "nome = '" + o.getNome() + "', "
-                    + "preco = '" + o.getPreco() + "',"
-                    + "updated_at = current_timestamp "
+                    + "preco = '" + o.getPreco() + "'"
                     + "WHERE id = " + o.getId();
 
             int resultado = ConexaoBD.getInstance().getConnection().createStatement().executeUpdate(sql);
 
             sql = "UPDATE carteira SET "
-                    + "valor = '" + o.getPreco() + "',"
-                    + "updated_at = current_timestamp "
+                    + "valor = '" + o.getPreco() + "'"
                     + "WHERE acao = " + o.getId();
 
             resultado = ConexaoBD.getInstance().getConnection().createStatement().executeUpdate(sql);
