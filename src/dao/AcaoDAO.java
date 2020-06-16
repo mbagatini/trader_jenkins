@@ -38,9 +38,7 @@ public class AcaoDAO implements IDAO<Acao> {
         try {
             String sql = "INSERT INTO acao VALUES (DEFAULT,"
                     + "'" + objeto.getNome() + "', "
-                    + "'" + objeto.getPreco() + "',"
-                    + "current_timestamp,"
-                    + "current_timestamp)";
+                    + "'" + objeto.getPreco() + "')";
 
             int resultado = ConexaoBD.getInstance().getConnection().createStatement().executeUpdate(sql);
 

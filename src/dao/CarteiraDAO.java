@@ -66,9 +66,7 @@ public class CarteiraDAO implements IDAO<Carteira> {
                         + objeto.getUsuario().getId() + ", "
                         + objeto.getAcao().getId() + ","
                         + objeto.getValor() + ","
-                        + objeto.getQuantidade() + ","
-                        + "current_timestamp, "
-                        + "current_timestamp)";
+                        + objeto.getQuantidade() + ")";
 
                 resultado = ConexaoBD.getInstance().getConnection().createStatement().executeUpdate(sql);
             }

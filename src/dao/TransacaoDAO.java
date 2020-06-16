@@ -53,9 +53,7 @@ public class TransacaoDAO implements IDAO<Transacao> {
                     + objeto.getValor() + ","
                     + objeto.getQuantidade() + ","
                     + objeto.getValor() * objeto.getQuantidade() + ","
-                    + "'" + objeto.getTipo() + "',"
-                    + "current_timestamp,"
-                    + "current_timestamp)";
+                    + "'" + objeto.getTipo() + "')";
 
             int resultado = ConexaoBD.getInstance().getConnection().createStatement().executeUpdate(sql);
 
