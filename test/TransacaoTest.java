@@ -62,7 +62,7 @@ public class TransacaoTest {
         TransacaoDAO tdao = new TransacaoDAO();
         
         Transacao t = new Transacao(new UsuarioDAO().consultarId(2), 
-                                    new AcaoDAO().consultarId(41), 
+                                    new AcaoDAO().consultarId(2), 
                                     12, 
                                     1, 
                                     'C');
@@ -75,7 +75,7 @@ public class TransacaoTest {
         TransacaoDAO tdao = new TransacaoDAO();
         
         Transacao t = new Transacao(new UsuarioDAO().consultarId(2), 
-                                    new AcaoDAO().consultarId(41), 
+                                    new AcaoDAO().consultarId(2), 
                                     12, 
                                     1, 
                                     'V');
@@ -101,7 +101,7 @@ public class TransacaoTest {
         TransacaoDAO tdao = new TransacaoDAO();
         
         Transacao t = new Transacao(new UsuarioDAO().consultarId(2), 
-                                    new AcaoDAO().consultarId(41), 
+                                    new AcaoDAO().consultarId(2), 
                                     12, 
                                     1, 
                                     'C');

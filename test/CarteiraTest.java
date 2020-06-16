@@ -84,7 +84,7 @@ public class CarteiraTest {
         Carteira c = new Carteira();
         
         c.setUsuario(u);
-        c.setAcao(new AcaoDAO().consultarId(41));
+        c.setAcao(new AcaoDAO().consultarId(2));
         c.setQuantidade(1);
         c.setValor(10);
         
