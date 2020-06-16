@@ -46,7 +46,7 @@ public class TransacaoDAO implements IDAO<Transacao> {
         }
 
         try {
-            String sql = "INSERT INTO transacao VALUES (DEFAULT,"
+            String sql = "INSERT INTO transacao VALUES ("
                     + objeto.getUsuario().getId() + ", "
                     + objeto.getAcao().getId() + ","
                     + "current_timestamp,"

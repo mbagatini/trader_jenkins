@@ -62,7 +62,7 @@ public class CarteiraDAO implements IDAO<Carteira> {
             
             // Se não atualizou, insere
             if (resultado == 0) {
-                sql = "INSERT INTO carteira VALUES (DEFAULT,"
+                sql = "INSERT INTO carteira VALUES ("
                         + objeto.getUsuario().getId() + ", "
                         + objeto.getAcao().getId() + ","
                         + objeto.getValor() + ","
