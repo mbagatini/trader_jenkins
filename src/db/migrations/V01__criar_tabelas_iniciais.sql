@@ -11,9 +11,7 @@ PRIMARY KEY(id));
 CREATE TABLE acao (
  id SERIAL NOT NULL,
  nome VARCHAR(50) NOT NULL,
- preco DECIMAL(15,2) NOT NULL,
- created_at TIMESTAMP, 
- updated_at TIMESTAMP, 
+ preco DECIMAL(15,2) NOT NULL 
 PRIMARY KEY(id));
 
  -- Tabela transacao
