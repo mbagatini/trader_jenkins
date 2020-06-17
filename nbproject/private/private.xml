@@ -3,7 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/adm/Desktop/Git/trader_java/Trader2/src/apoio/ConexaoBD.java</file>
+            <file>file:/home/renan/Projetos/trader_jenkins/src/db/migrations/V01__criar_tabelas_iniciais.sql</file>
+            <file>file:/home/renan/Projetos/trader_jenkins/src/db/migrations/V03__criar_user_teste.sql</file>
+            <file>file:/home/renan/Projetos/trader_jenkins/test/CarteiraTest.java</file>
         </group>
     </open-files>
 </project-private>
