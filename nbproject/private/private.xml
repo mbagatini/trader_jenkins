@@ -3,9 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/renan/Projetos/trader_jenkins/src/db/migrations/V01__criar_tabelas_iniciais.sql</file>
-            <file>file:/home/renan/Projetos/trader_jenkins/src/db/migrations/V03__criar_user_teste.sql</file>
-            <file>file:/home/renan/Projetos/trader_jenkins/test/CarteiraTest.java</file>
+            <file>file:/home/renan/Projetos/trader_jenkins/src/db/migrations/V04__criar_nova_tabela.sql</file>
+            <file>file:/home/renan/Projetos/trader_jenkins/src/db/migrations/V02__rodar_sqls_inicias.sql</file>
+            <file>file:/home/renan/Projetos/trader_jenkins/src/db/migrations/V05__criar_nova_tabela_teste2.sql.sql</file>
+            <file>file:/home/renan/Projetos/trader_jenkins/src/db/migrations/V06__atualiza_senhas_usuarios.sql</file>
         </group>
     </open-files>
 </project-private>
